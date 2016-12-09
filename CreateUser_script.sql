@@ -1,0 +1,5 @@
+INSERT INTO "PROACTV3"."TBL_LK_RESOURCES" (RESOURCEID, FIRSTNAME, LASTNAME, NTLOGIN) 
+VALUES ((select max(resourceid)+1 from TBL_LK_RESOURCES), 'Ed', 'Triska', 'ETRISKA');
+
+INSERT INTO "PROACTV3"."TBL_CREATEPERM" (ID, RESID, USERNAME) 
+VALUES ((select max(id)+1 from TBL_CREATEPERM), (select max(resourceid) from TBL_LK_RESOURCES), 'Ed Triska');
