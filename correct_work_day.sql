@@ -1,3 +1,4 @@
+--To reset work day in temp table
 UPDATE um_h_sch_d SET work_day = (
   CASE WHEN to_char(to_date(from_date),'day') LIKE 'sunday%' THEN '1'
               WHEN to_char(to_date(from_date),'day') LIKE 'monday%' THEN '2'
