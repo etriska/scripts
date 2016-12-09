@@ -1183,6 +1183,7 @@ chrBuff:=REPLACE(chrBuff,CHR(9),' ');
 	END LOOP;
 	UTL_FILE.FCLOSE(filInp);
 	UTL_FILE.FCLOSE(filOut);
+  --end
 END proc_FixPlantSub;
 
 ---- create table iv_fmax_extra/iv_fms_extra/iv_plant_fmax/iv_plant_fms(content varchar2(600));
