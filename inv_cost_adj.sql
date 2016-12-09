@@ -154,6 +154,7 @@ WHERE ( (ae_i_loc_e.multitenant_id = 1)
 AND (ae_i_loc_e.warehouse          = 'M2350')
 AND (ae_i_loc_e.bin_location       = 'UNIT1.B.2.2')
 AND (ae_i_loc_e.multitenant_id     = 1) );
+
 UPDATE ae_i_inv_w
 SET whse_cost                      = 54.0800
 WHERE ( (ae_i_inv_w.multitenant_id = 1)

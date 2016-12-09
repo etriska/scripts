@@ -18,6 +18,10 @@ null, '2404782-2016', '003', null, null, 'PR', 19922, 1, null, '18082000',
 null, null, 'USD', null, 0.00, 0.00, 0.00, 0.00, 0, 0.00, 0, null, null, null,
 0, null, null, null, '2016-05-17 15:49:31');
 
+INSERT INTO ae_i_rec_status_hist (multitenant_id, doc_num, status_date,
+status_code, login, reason_code, edit_date, edit_clerk) VALUES (1, 19922,
+'2016-05-17 15:49:35', 'CLOSED', 'ETRISKA', null, '2016-05-17 15:49:35',
+'ETRISKA');
 UPDATE ae_i_poe_d SET tot_dist_qty = 1.0000, edit_date = '2016-05-17 15:49:34',
 edit_clerk = 'ETRISKA' 
 WHERE ( (ae_i_poe_d.multitenant_id = 1) AND
@@ -35,11 +39,6 @@ edit_clerk = 'ETRISKA'
 WHERE ( (ae_i_poe_f.multitenant_id = 1) AND
 (ae_i_poe_f.doc_num = 19922) AND (ae_i_poe_f.doc_item = 1) AND
 (ae_i_poe_f.multitenant_id = 1) );
-
-INSERT INTO ae_i_rec_status_hist (multitenant_id, doc_num, status_date,
-status_code, login, reason_code, edit_date, edit_clerk) VALUES (1, 19922,
-'2016-05-17 15:49:35', 'CLOSED', 'ETRISKA', null, '2016-05-17 15:49:35',
-'ETRISKA');
 
 UPDATE ae_i_rec_e SET edit_date = '2016-05-17 15:49:35', edit_clerk = 'ETRISKA',
 status_code = 'CLOSED' WHERE ( (ae_i_rec_e.multitenant_id = 1) AND

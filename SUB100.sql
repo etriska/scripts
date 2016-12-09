@@ -118,7 +118,7 @@ numPlant_ext_rec_cnt		NUMBER(16);
 -- Extract data from Plants AEC system to transmit them to DSC for the purpose of Service Unit Billing.
 -- The program simulates it runs three days prior the last day of month.
 -- The output of this program is a file which will be sent to DSC
--- The output file contains tw otypes of records.
+-- The output file contains two types of records.
 -- Plantzero file lists the work request with charges and having the sum of offsetting debit and credit
 -- be zero
 chrDate_flag		VARCHAR2(1);
